@@ -236,7 +236,7 @@ func getResponseWithJSON(mapWithData map[string]interface{}, w http.ResponseWrit
 
 	wg.Wait()
 
-	jsonToPrint, _ := json.Marshal(dominioToFill)
+	jsonToPrint, _ := json.MarshalIndent(dominioToFill, "", "\t")
 
 	w.Header().Set("Content-Type", "application/json")
 	w.WriteHeader(200)
@@ -553,6 +553,7 @@ func listAll(w http.ResponseWriter, r *http.Request) {
 		if err != nil {
 			break
 		}
+		w.WriteHeader(200)
 
 		w.Write([]byte(id))
 		w.Write([]byte(servidores))
