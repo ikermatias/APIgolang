@@ -18,9 +18,9 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	scrap "github.com/badoux/goscraper"
+	scrap "github.com/goscraper"
 	"github.com/likexian/whois-go"
-	whoisparser "github.com/ikermatias/whois-parser-go"
+	whoisparser "github.com/likexian/whois-parser-go"
 )
 
 var wg sync.WaitGroup
@@ -440,7 +440,9 @@ func getLowestGrade(arrayServers []Server) string {
 	for i := 0; i < len(arrayServers); i++ {
 
 		switch arrayServers[i].SslGrade {
-
+		
+		case "A+":
+			arrayInt[i] = 85
 		case "A":
 			arrayInt[i] = 80
 		case "B":
@@ -461,7 +463,9 @@ func getLowestGrade(arrayServers []Server) string {
 	sort.Ints(arrayInt)
 	var result string
 	switch arrayInt[0] {
-
+	
+	case 85:
+		result = "A+"
 	case 80:
 		result = "A"
 	case 65:
