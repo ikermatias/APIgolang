@@ -18,9 +18,9 @@ import (
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/chi/middleware"
-	scrap "github.com/goscraper"
+	scrap "github.com/badoux/goscraper"
 	"github.com/likexian/whois-go"
-	whoisparser "github.com/likexian/whois-parser-go"
+	whoisparser "github.com/ikermatias/whois-parser-go"
 )
 
 var wg sync.WaitGroup
