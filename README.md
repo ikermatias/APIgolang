@@ -29,14 +29,12 @@ This is the test for Truora.com
     * [Whois-parser]("github.com/ikermatias/whois-parser-go") 
 
 ## APP 
-
-
-
+![imagen](./screenshots/1.jpeg) ![imagen](./screenshots/2.jpeg) ![imagen](./screenshots/3.jpeg) ![imagen](./screenshots/4.jpeg) ![imagen](./screenshots/5.jpeg) 
 
 ## Quick Run Project
 
 TODO
-
+Docker
 ```
 git clone https://github.com/ikermatias/APIgolang.git
 
