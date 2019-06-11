@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Truora</string>
+    <string name="letraLogo">T</string>
+    <string name="powered">Powered by JSGD</string>
+    <string name="apiVersion">API V1</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
